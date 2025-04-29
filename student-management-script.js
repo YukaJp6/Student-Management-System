@@ -28,6 +28,31 @@ function filterTopStudents(minGrade) {
 }
 
 // function to map students into formatted list
-function formatStudents() {
+function formatStudentList() {
     return students.map(student => `${student.name} - Grade: ${student.grade}`);
 }
+
+// start
+console.log("students =", students);
+
+// add students
+addStudent("Alice", 85);
+addStudent("Bob", 90);
+addStudent("Charles", 78);
+addStudent("Dave", 60);
+addStudent("Emma", 92);
+
+// show list of students in console
+console.log("Student List:");
+console.log(formatStudentList());
+
+// remove student "Charles"
+removeStudent("Charles");
+
+// show updated list of students in console
+console.log("Student List:");
+console.log(formatStudentList());
+
+// filter remaining student list to show >= 80 grade
+console.log("Students with grade equal to or higher than 80");
+console.log(filterTopStudents(80));
