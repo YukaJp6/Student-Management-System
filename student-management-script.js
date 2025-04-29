@@ -1,1 +1,1 @@
-// g9gigiig
+const gg = 2
